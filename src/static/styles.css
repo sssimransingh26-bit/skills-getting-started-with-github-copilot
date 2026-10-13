@@ -90,30 +90,31 @@ section h3 {
 }
 
 .participants-list {
-  list-style: none;
-  padding-left: 0;
+  list-style: disc;
+  padding-left: 24px;
   margin: 0;
   color: #334155;
 }
 
 .participant-item {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 12px;
-  padding: 8px 10px;
+  position: relative;
+  padding: 8px 50px 8px 10px;
   margin-bottom: 6px;
   border-radius: 8px;
   background: #eef3ff;
 }
 
 .participant-item.empty {
+  list-style: none;
   background: transparent;
   padding-left: 0;
-  justify-content: flex-start;
 }
 
 .delete-participant {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
   appearance: none;
   border: none;
   background: #dbeafe;
@@ -129,7 +130,7 @@ section h3 {
 
 .delete-participant:hover {
   background: #bfdbfe;
-  transform: scale(1.04);
+  transform: translateY(-50%) scale(1.04);
 }
 
 .form-group {
